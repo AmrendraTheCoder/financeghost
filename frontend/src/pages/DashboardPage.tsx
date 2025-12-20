@@ -4,16 +4,9 @@ import {
   PieChart,
   Pie,
   Cell,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
   Legend,
-  LineChart,
-  Line,
 } from 'recharts';
 import {
   ArrowRight,

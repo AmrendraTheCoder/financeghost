@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getInvoices, getEmails, api } from '../api';
+import { getInvoices, getEmails } from '../api';
 import type { Invoice } from '../api';
 import {
   Search,
@@ -16,10 +16,8 @@ import {
   AlertTriangle,
   CheckCircle,
   Copy,
-  ExternalLink,
   Tag,
   Receipt,
-  Percent,
   ArrowRight,
 } from 'lucide-react';
 
