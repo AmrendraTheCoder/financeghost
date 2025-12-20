@@ -1,0 +1,118 @@
+{
+  "clients": [
+    {
+      "client_id": "1",
+      "client_name": "TechVentures Pvt Ltd",
+      "gstin": "27AABCT1234C1ZK",
+      "industry": "IT Services",
+      "monthly_revenue": 4500000
+    },
+    {
+      "client_id": "2",
+      "client_name": "Mumbai Textiles Co",
+      "gstin": "27AABMT5678D1ZL",
+      "industry": "Manufacturing",
+      "monthly_revenue": 8200000
+    },
+    {
+      "client_id": "3",
+      "client_name": "Sharma & Associates",
+      "gstin": "27AABSA9012E1ZM",
+      "industry": "Legal Services",
+      "monthly_revenue": 1200000
+    },
+    {
+      "client_id": "4",
+      "client_name": "Green Energy Solutions",
+      "gstin": null,
+      "industry": "Renewable Energy",
+      "monthly_revenue": 3500000
+    },
+    {
+      "client_id": "5",
+      "client_name": "Bharat Foods Ltd",
+      "gstin": "27AABKF3456G1ZO",
+      "industry": "FMCG",
+      "monthly_revenue": 12000000
+    }
+  ],
+  "demo_scenario": {
+    "description": "Month-end close scenario for December 2024",
+    "current_date": "2024-12-20",
+    "filing_deadline": "2024-12-31",
+    "client_statuses": {
+      "1": {
+        "phase": "filing_ready",
+        "progress": 95,
+        "risk_level": "low",
+        "notes": "All reconciliations complete, ready for GSTR filing"
+      },
+      "2": {
+        "phase": "data_collection",
+        "progress": 25,
+        "risk_level": "high",
+        "notes": "Missing 47 vendor invoices, client unresponsive"
+      },
+      "3": {
+        "phase": "reconciliation",
+        "progress": 60,
+        "risk_level": "medium",
+        "notes": "Bank statement mismatch, investigating ₹2.3L difference"
+      },
+      "4": {
+        "phase": "data_collection",
+        "progress": 10,
+        "risk_level": "critical",
+        "notes": "GSTIN missing, cannot file without registration"
+      },
+      "5": {
+        "phase": "review",
+        "progress": 80,
+        "risk_level": "low",
+        "notes": "Final review by senior CA, expected completion tomorrow"
+      }
+    },
+    "urgent_items": [
+      {
+        "id": "urgent-1",
+        "client_id": "4",
+        "title": "Missing GSTIN Registration",
+        "description": "Green Energy Solutions has no GSTIN on file. GST filing is impossible without registration.",
+        "priority_score": 95,
+        "deadline": "2024-12-22",
+        "suggested_action": "Contact client immediately for GSTIN or initiate new registration"
+      },
+      {
+        "id": "urgent-2",
+        "client_id": "2",
+        "title": "47 Missing Vendor Invoices",
+        "description": "Mumbai Textiles has significant gaps in purchase records for December.",
+        "priority_score": 85,
+        "deadline": "2024-12-25",
+        "suggested_action": "Send automated reminder to client with missing invoice list"
+      },
+      {
+        "id": "urgent-3",
+        "client_id": "3",
+        "title": "Bank Reconciliation Mismatch",
+        "description": "₹2,30,000 discrepancy between books and bank statement for Sharma & Associates.",
+        "priority_score": 70,
+        "deadline": "2024-12-26",
+        "suggested_action": "Compare transaction-by-transaction with bank statement PDF"
+      }
+    ],
+    "bottlenecks": [
+      "3 clients (60%) stuck at data_collection phase",
+      "Green Energy Solutions blocked - no GSTIN",
+      "Mumbai Textiles unresponsive since Dec 15"
+    ],
+    "briefing": {
+      "headline": "3 urgent items need attention. 11 days to filing deadline.",
+      "key_points": [
+        "1 client ready for filing",
+        "1 client critical - missing GSTIN",
+        "47 invoices pending from Mumbai Textiles"
+      ]
+    }
+  }
+}
